@@ -33,6 +33,6 @@ for boarding_pass in passes:
 
 seat_IDs.sort()
 
-for z in range (11,850):
+for z in range (min(seat_IDs),max(seat_IDs)):
     if z not in seat_IDs:
         print(z)
